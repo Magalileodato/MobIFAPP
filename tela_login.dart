@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 void main() {
   runApp(const LoginScreen());
 }
@@ -25,7 +26,7 @@ class LoginScreen extends StatelessWidget {
             children: <Widget>[
               // Imagem na parte superior
               Image.asset(
-                'assets/images/login_background.jpg', // Caminho para a imagem de fundo
+                'assets/images/login_02.jpg', // Caminho para a imagem de fundo
                 height: 200.0, // Altura da imagem
                 fit: BoxFit.cover, // Ajuste da imagem para cobrir toda a área verificar
               ),
