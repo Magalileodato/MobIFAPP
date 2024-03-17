@@ -1,0 +1,274 @@
+<mxfile host="app.diagrams.net" modified="2024-03-09T20:18:34.800Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="NV2kRqj60N9oDqKSEA1r" version="22.1.18" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1707" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="sBzOO82kY9mzzh43Sfib-0" value="&lt;b&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;Fluxo - Transição de Telas -App&lt;/font&gt;&lt;/b&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="230" y="50" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sBzOO82kY9mzzh43Sfib-11" value="Tela Principal" style="swimlane;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="40" y="340" width="220" height="185" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnu-MJC8ZpNJVp4QoBLy-18" value="Universidades Participantes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="sBzOO82kY9mzzh43Sfib-11" vertex="1">
+          <mxGeometry x="5" y="41" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnu-MJC8ZpNJVp4QoBLy-19" value="Acompanhamento de Inscrição&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="sBzOO82kY9mzzh43Sfib-11" vertex="1">
+          <mxGeometry x="1" y="78" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnu-MJC8ZpNJVp4QoBLy-20" value="Participantes Itinerantes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="sBzOO82kY9mzzh43Sfib-11" vertex="1">
+          <mxGeometry x="2" y="111" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnu-MJC8ZpNJVp4QoBLy-21" value="Pontos Turísticos" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="sBzOO82kY9mzzh43Sfib-11" vertex="1">
+          <mxGeometry x="1" y="145" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sBzOO82kY9mzzh43Sfib-13" value="Tela - Edição - Cadastro dos Pontos Turísticos" style="swimlane;whiteSpace=wrap;html=1;startSize=40;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="640" y="950" width="205" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-36" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;País - Cidade -&amp;nbsp; Principais informações turísticas - distância da Capital&amp;nbsp; Principais pontos de apoio como rodoviária, restaurantes e hotelaria&amp;nbsp;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="sBzOO82kY9mzzh43Sfib-13">
+          <mxGeometry x="10" y="41" width="191" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="sBzOO82kY9mzzh43Sfib-14" value="Tela Cadastro das Universidade" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="700" y="585" width="233" height="205" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-12" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;Nome da Instituição&lt;/blockquote&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="sBzOO82kY9mzzh43Sfib-14">
+          <mxGeometry x="-46" y="35" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-13" value="UF/Região&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Quantidade vagas" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="sBzOO82kY9mzzh43Sfib-14">
+          <mxGeometry x="-7" y="65" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-14" value="País -&amp;nbsp; Cidade&amp;nbsp; - Curso&amp;nbsp; -&amp;nbsp; Data do Edital" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="sBzOO82kY9mzzh43Sfib-14">
+          <mxGeometry x="-7" y="105" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-15" value="Escolaridade&amp;nbsp;&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="sBzOO82kY9mzzh43Sfib-14">
+          <mxGeometry x="-7" y="135" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-16" value="Anexar arquivo" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="sBzOO82kY9mzzh43Sfib-14">
+          <mxGeometry y="165" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnu-MJC8ZpNJVp4QoBLy-0" value="Tela&amp;nbsp; Acompanhamento de Inscrição" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="21" y="681" width="250" height="129" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-29" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;Nome - País&amp;nbsp; -&amp;nbsp; Cidade&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Curso - Escolaridade -&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp;Tipo de Vínculo - Instituição de Origem - Instituição de destino&amp;nbsp;&lt;br&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="Hnu-MJC8ZpNJVp4QoBLy-0">
+          <mxGeometry x="7" y="38" width="233" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnu-MJC8ZpNJVp4QoBLy-1" value="Tela - Pontos Turísticos" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="-130" y="904" width="214" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-30" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;Tela em formato de mapa com os pontos Turísticos onde existe um intercambio&amp;nbsp;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="Hnu-MJC8ZpNJVp4QoBLy-1">
+          <mxGeometry x="11" y="40" width="206" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnu-MJC8ZpNJVp4QoBLy-3" value="Tela Cadastro de login" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="250" y="120" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnu-MJC8ZpNJVp4QoBLy-10" value="Email" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="Hnu-MJC8ZpNJVp4QoBLy-3" vertex="1">
+          <mxGeometry x="10" y="40" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnu-MJC8ZpNJVp4QoBLy-11" value="Senha" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="Hnu-MJC8ZpNJVp4QoBLy-3" vertex="1">
+          <mxGeometry x="9" y="70" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnu-MJC8ZpNJVp4QoBLy-4" value="Tela de login" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="39" y="120" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnu-MJC8ZpNJVp4QoBLy-6" value="Email" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="Hnu-MJC8ZpNJVp4QoBLy-4" vertex="1">
+          <mxGeometry x="10" y="40" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnu-MJC8ZpNJVp4QoBLy-8" value="Senha" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="Hnu-MJC8ZpNJVp4QoBLy-4" vertex="1">
+          <mxGeometry x="10" y="70" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnu-MJC8ZpNJVp4QoBLy-7" value="Cadastro" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="Hnu-MJC8ZpNJVp4QoBLy-4" vertex="1">
+          <mxGeometry x="10" y="95" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnu-MJC8ZpNJVp4QoBLy-5" value="Tela de Visualização dos dados&amp;nbsp; dos participantes Itinerantes" style="swimlane;whiteSpace=wrap;html=1;startSize=40;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="-520.5" y="827" width="230" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-24" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;Nome - País&amp;nbsp; -&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Curso - Escolaridade -&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;Instituição de Origem - Instituição de destino&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="Hnu-MJC8ZpNJVp4QoBLy-5">
+          <mxGeometry x="4" y="40" width="222" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnu-MJC8ZpNJVp4QoBLy-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Hnu-MJC8ZpNJVp4QoBLy-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="300" as="sourcePoint" />
+            <mxPoint x="250" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sRTGqwBrRqTxjuqaENGv-1" value="" style="group" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1" connectable="0">
+          <mxGeometry x="390" y="330" width="220" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="sBzOO82kY9mzzh43Sfib-12" value="Tela Lateral" style="swimlane;whiteSpace=wrap;html=1;" parent="sRTGqwBrRqTxjuqaENGv-1" vertex="1">
+          <mxGeometry width="220" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnu-MJC8ZpNJVp4QoBLy-23" value="Home" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="sBzOO82kY9mzzh43Sfib-12" vertex="1">
+          <mxGeometry x="-1" y="31" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnu-MJC8ZpNJVp4QoBLy-24" value="Cadastro das Universidades" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="sBzOO82kY9mzzh43Sfib-12" vertex="1">
+          <mxGeometry x="2" y="61" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnu-MJC8ZpNJVp4QoBLy-25" value="Cadastro dos Participantes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="sBzOO82kY9mzzh43Sfib-12" vertex="1">
+          <mxGeometry x="-1" y="91" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnu-MJC8ZpNJVp4QoBLy-26" value="Cadastro dos Pontos turísticos&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="sBzOO82kY9mzzh43Sfib-12" vertex="1">
+          <mxGeometry x="-2" y="154" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sRTGqwBrRqTxjuqaENGv-0" value="Participantes Itinerantes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="sRTGqwBrRqTxjuqaENGv-1" vertex="1">
+          <mxGeometry x="4" y="121" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sRTGqwBrRqTxjuqaENGv-2" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.012;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" target="Hnu-MJC8ZpNJVp4QoBLy-25" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="420" as="sourcePoint" />
+            <mxPoint x="440" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sRTGqwBrRqTxjuqaENGv-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Hnu-MJC8ZpNJVp4QoBLy-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="430" as="sourcePoint" />
+            <mxPoint x="390" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sRTGqwBrRqTxjuqaENGv-5" value="&lt;b&gt;Obs&lt;/b&gt;:&amp;nbsp; O ícone home é apenas transição da tela lateral para tela principla&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="610" y="240" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Hnu-MJC8ZpNJVp4QoBLy-2" value="Tela - Edição Cadastro dos Participantes" style="swimlane;whiteSpace=wrap;html=1;startSize=40;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="1010" y="360" width="227" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-23" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;Nome - País - UF/Região -&amp;nbsp; Cidade&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Curso - Instituição de origem -&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp;Instituição de Destino -&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp;Escolaridade Tipo de Vinculo -&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Anexar documentos&amp;nbsp;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="Hnu-MJC8ZpNJVp4QoBLy-2">
+          <mxGeometry x="1" y="36" width="222" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-0" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="424" as="sourcePoint" />
+            <mxPoint x="711" y="424" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-1" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.271;entryY=0.667;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="nKYkR-bp7kAqk5QNKZRJ-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="570" y="530" as="sourcePoint" />
+            <mxPoint x="440" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-2" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="530" as="sourcePoint" />
+            <mxPoint x="480" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-3" value="Tela de Visualização das&amp;nbsp; Universidade Participantes" style="swimlane;whiteSpace=wrap;html=1;startSize=48;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-290.5" y="422" width="265" height="148" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-18" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;i&gt;&lt;b&gt;I&lt;/b&gt;&lt;/i&gt;&lt;/span&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;i&gt;&lt;b&gt;magens/ícones&lt;/b&gt;&lt;/i&gt; com os sloganes&amp;nbsp; das Universidades e seu nome como link&lt;/font&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="nKYkR-bp7kAqk5QNKZRJ-3">
+          <mxGeometry x="17.5" y="56" width="230" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-8" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="526" as="sourcePoint" />
+            <mxPoint x="140" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-9" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="nKYkR-bp7kAqk5QNKZRJ-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="38" y="451" as="sourcePoint" />
+            <mxPoint x="10" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.233;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.665;entryY=-0.008;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Hnu-MJC8ZpNJVp4QoBLy-21" target="nKYkR-bp7kAqk5QNKZRJ-25">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="520" as="sourcePoint" />
+            <mxPoint x="-120" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-11" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.452;entryY=-0.004;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="Hnu-MJC8ZpNJVp4QoBLy-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="520" as="sourcePoint" />
+            <mxPoint x="10" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-19" value="Tela Individual de Visualização da Universidade Participante" style="swimlane;whiteSpace=wrap;html=1;startSize=50;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-305" y="140" width="226" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-20" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Nome da Instituição - Curso - País - Cidade - Descrição da V&lt;span style=&quot;background-color: initial;&quot;&gt;aga -&amp;nbsp; Quantidade de Vagas - Data da Abertura do Edital&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Data de Finalização do edital - Visualizar Edital&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="nKYkR-bp7kAqk5QNKZRJ-19">
+          <mxGeometry y="54" width="222" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-21" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.546;entryY=1.033;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-130" y="420" as="sourcePoint" />
+            <mxPoint x="-179.42000000000007" y="319.96000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-25" value="Tela dos participantes Itinerantes" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-270" y="697" width="230" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-26" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;Tela em formato de mapa com os participantes Itinerantes&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="nKYkR-bp7kAqk5QNKZRJ-25">
+          <mxGeometry x="8.5" y="37.5" width="206" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-28" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="Hnu-MJC8ZpNJVp4QoBLy-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-270" y="750" as="sourcePoint" />
+            <mxPoint x="-140" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-33" value="Tela - Informação -Pontos Turísticos" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="134" y="1012" width="240" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-34" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;País - Cidade -&amp;nbsp; Principais informações turísticas - distância da Capital&amp;nbsp; Principais pontos de apoio como rodoviária, restaurantes e hotelaria&amp;nbsp;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="nKYkR-bp7kAqk5QNKZRJ-33">
+          <mxGeometry x="11" y="40" width="206" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-35" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nKYkR-bp7kAqk5QNKZRJ-30">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="1050" as="sourcePoint" />
+            <mxPoint x="240" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-38" value="Tela Cadastro dos Pontos Turísticos" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="395" y="740" width="205" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-39" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;País - Cidade -&amp;nbsp; Principais informações turísticas - distância da Capital&amp;nbsp; Principais pontos de apoio como rodoviária, restaurantes e hotelaria&amp;nbsp;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="nKYkR-bp7kAqk5QNKZRJ-38">
+          <mxGeometry x="10" y="41" width="191" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-40" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nKYkR-bp7kAqk5QNKZRJ-38">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="860" as="sourcePoint" />
+            <mxPoint x="640" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-41" value="Tela- Edição-&amp;nbsp; Cadastro das Universidade" style="swimlane;whiteSpace=wrap;html=1;startSize=41;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="990" y="718.5" width="233" height="205" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-42" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;Nome da Instituição&lt;/blockquote&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="nKYkR-bp7kAqk5QNKZRJ-41">
+          <mxGeometry x="-46" y="35" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-43" value="UF/Região&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Quantidade vagas" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="nKYkR-bp7kAqk5QNKZRJ-41">
+          <mxGeometry x="-7" y="65" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-44" value="País -&amp;nbsp; Cidade&amp;nbsp; - Curso&amp;nbsp; -&amp;nbsp; Data do Edital" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="nKYkR-bp7kAqk5QNKZRJ-41">
+          <mxGeometry x="-7" y="105" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-45" value="Escolaridade&amp;nbsp;&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="nKYkR-bp7kAqk5QNKZRJ-41">
+          <mxGeometry x="-7" y="135" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-46" value="Anexar arquivo" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="nKYkR-bp7kAqk5QNKZRJ-41">
+          <mxGeometry y="165" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-47" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="934" y="701" as="sourcePoint" />
+            <mxPoint x="990" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-48" value="Tela Cadastro dos Participantes" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="710" y="360" width="227" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-49" value="&lt;div style=&quot;font-size: 14px;&quot;&gt;Nome - País - UF/Região -&amp;nbsp; Cidade&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Curso - Instituição de origem - Instituição de Destino - Escolaridade Tipo de Vinculo -&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Anexar documentos&amp;nbsp;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="nKYkR-bp7kAqk5QNKZRJ-48">
+          <mxGeometry x="1" y="36" width="222" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-51" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="940" y="410" as="sourcePoint" />
+            <mxPoint x="1010" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nKYkR-bp7kAqk5QNKZRJ-52" value="&lt;b&gt;Obs&lt;/b&gt;:&amp;nbsp; Apenas as telas de cadastro que terão edição as demais será apenas para visualização" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1010" y="600" width="180" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
