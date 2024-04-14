@@ -74,4 +74,61 @@ class _ParticipantesItinerantesStateState extends State<_ParticipantesItinerante
 }
 
 //Açoes referente a págiana 
+// Widget para o mapa com marcadores
+class MapaComMarcadores extends StatefulWidget {
+  const MapaComMarcadores({super.key});
+
+  @override
+  
+  @override
+MapaComMarcadoresState createState() => MapaComMarcadoresState();
+
+}
+
+class MapaComMarcadoresState extends State<MapaComMarcadores> {
+  late GoogleMapController mapController; // Marcando mapController como late 
+                                          //  para indicar que ela será inicializada posteriormente.
+                                          // verificar como funciona
+
+  final LatLng _centroMapa = const LatLng(-23.550520, -46.633308);
+  final List<Marker> _markers = []; // Lista de marcadores
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Mapa com Marcadores'),
+      ),
+      body: GoogleMap(
+        initialCameraPosition: CameraPosition(
+          target: _centroMapa,
+          zoom: 10.0,
+        ),
+        onMapCreated: (GoogleMapController controller) {
+          mapController = controller;
+          setState(() {
+            _markers.add(
+              const Marker(
+                markerId: MarkerId('id_1'),
+                position: LatLng(-23.550520, -46.633308),
+                infoWindow: InfoWindow(
+                  title: 'Marcador 1',
+                  snippet: 'Descrição do marcador 1',
+                ),
+              ),
+            );
+          });
+        },
+        markers: Set.from(_markers),
+      ),
+    );
+  }
+}
+
+void main() {
+  runApp(const MaterialApp(
+    home: MapaComMarcadores(),
+  ));
+}
 
