@@ -1,14 +1,8 @@
-// ignore_for_file: library_private_types_in_public_api
-
 import 'package:flutter/material.dart';
-import 'package:logger/logger.dart';
-
-
+import 'package:firebase_auth/firebase_auth.dart';
 
 class TelaCadastro extends StatelessWidget {
-  const TelaCadastro({Key? key, required String title}) : super(key: key);
-  
-  
+  const TelaCadastro({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,139 +10,100 @@ class TelaCadastro extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Cadastre-se'),
       ),
-      body: const _CadastroTelaState(title: ''),
+      body: const CadastroForm(), // Chamando o widget do formulário de cadastro
     );
   }
 }
 
-class _CadastroTelaState extends StatefulWidget {
-  final String title;
-
-  const _CadastroTelaState({Key? key, required this.title}) : super(key: key);
+class CadastroForm extends StatefulWidget {
+  const CadastroForm({Key? key}) : super(key: key);
 
   @override
-  State<_CadastroTelaState> createState() => _CadastroTelaStateState();
+   createState() => _CadastroFormState();
 }
 
-class _CadastroTelaStateState extends State<_CadastroTelaState> {
-  // Criação da página de Cadstro
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: ListView(
-          children: <Widget>[
-            Container(
-              margin: const EdgeInsets.only(top: 20), // Espaço supeior da imagem
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(40),
-                child: Image.asset(
-                  'images/livro.jpg',
-                  width: 50, //Tamanho da imagem
-                  height: 50,
-                ),
-              ),
-            ),
-            const SizedBox(height: 5),
-            const Text(
-              'Universidade sem Fronteiras',
-              style: TextStyle(
-                fontSize: 15, // Tamanho da Fonte
-                fontWeight: FontWeight.bold, //Estilo da fonte negrito
-                color: Colors.black,
-              ),
-              textAlign: TextAlign.center, // Aliando o texto no centro
-            ),
-            const SizedBox(height: 10),
-            const Divider(
-              height: 2,
-              color: Colors.black,
-              thickness: 4, // Espesura da linha
-              indent: 10,
-              endIndent: 10,
-            ),
-          ], 
-        ),
-      ),
-    );
-  }
-}
-
-//Açoes referente a págiana 
-
-
-// TelaCastro é um StatefulWidget responsável pela tela de cadastro.
-class TelaCastro extends StatefulWidget {
-  const TelaCastro({Key? key}) : super(key: key);
-
-  @override
-  _TelaCastroState createState() => _TelaCastroState();
-}
-
-// _TelaCastroState é a classe que mantém o estado da tela de cadastro.
-class _TelaCastroState extends State<TelaCastro> {
+class _CadastroFormState extends State<CadastroForm> {
   final TextEditingController _emailController = TextEditingController();
-  final TextEditingController _passwordController = TextEditingController();
-
-  @override
-  void dispose() {
-    _emailController.dispose();
-    _passwordController.dispose();
-    super.dispose();
-  }
+  final TextEditingController _senhaController = TextEditingController();
+  final FirebaseAuth _auth = FirebaseAuth.instance;
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Cadastro'),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            // Campo de entrada para o email.
-            TextField(
-              controller: _emailController,
-              decoration: const InputDecoration(
-                labelText: 'Email',
-              ),
+    return Padding(
+      padding: const EdgeInsets.all(16.0),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          // Campo de entrada para o email.
+          TextField(
+            controller: _emailController,
+            decoration: const InputDecoration(
+              labelText: 'Email',
             ),
-            const SizedBox(height: 16.0),
-            // Campo de entrada para a senha.
-            TextField(
-              controller: _passwordController,
-              obscureText: true, // Mascara o texto digitado
-              decoration: const InputDecoration(
-                labelText: 'Senha',
-              ),
+          ),
+          const SizedBox(height: 16.0),
+          // Campo de entrada para a senha.
+          TextField(
+            controller: _senhaController,
+            obscureText: true, // Mascara o texto digitado
+            decoration: const InputDecoration(
+              labelText: 'Senha',
             ),
-            const SizedBox(height: 32.0),
-             // Botão para submeter o formulário de cadastro.
-            ElevatedButton(
-              onPressed: () {
-                // Obtém o email e a senha digitados
-                String email = _emailController.text;
-                String password = _passwordController.text;
-                // Registra o novo email e senha utilizando o logger.
-                logeer.d('Novo Email: $email');
-                logeer.d('Nova Senha: $password');
-              },
-              child: const Text('Cadastrar'),
-            ),
-          ],
-        ),
+          ),
+          const SizedBox(height: 32.0),
+           // Botão para submeter o formulário de cadastro.
+          ElevatedButton(
+            onPressed: () async {
+              await _criarConta();
+            },
+            child: const Text('Cadastrar'),
+          ),
+        ],
       ),
     );
   }
-  
-}
-// Não é necessário definir o mixin logeer neste caso, 
-// porque estamos usando o logger diretamente no _TelaCastroState.
-mixin logeer {
-  static void d(String s) {}
+
+  // Método para lidar com a criação de conta
+  Future<void> _criarConta() async {
+    // Obtém o email e a senha digitados
+    String email = _emailController.text;
+    String senha = _senhaController.text;
+
+    try {
+      // Cria a conta no Firebase Authentication
+      await _auth.createUserWithEmailAndPassword(
+        email: email,
+        password: senha,
+      );
+
+      // Exibe uma mensagem de sucesso
+      _mostrarAlerta('Sucesso', 'Conta criada com sucesso!');
+    } catch (e) {
+      // Exibe uma mensagem de erro se ocorrer algum problema
+      _mostrarAlerta('Erro', 'Erro ao criar a conta: $e');
+    }
+
+    // Limpar os campos após a criação da conta
+    _emailController.clear();
+    _senhaController.clear();
+  }
+
+  // Método para exibir um alerta
+  void _mostrarAlerta(String titulo, String mensagem) {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text(titulo),
+        content: Text(mensagem),
+        actions: [
+          TextButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            child: const Text('OK'),
+          ),
+        ],
+      ),
+    );
+  }
 }
