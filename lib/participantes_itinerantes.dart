@@ -1,22 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 
-
+// Widget para a página de participantes itinerantes
 class ParticipantesItinerantes extends StatelessWidget {
   const ParticipantesItinerantes({Key? key, required String title}) : super(key: key);
   
-  
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Participantes Itinerantes'),
       ),
+      // Chama o estado _ParticipantesItinerantesState, passando o título
       body: const _ParticipantesItinerantesState(title: 'Universidade sem Fronteiras'),
     );
   }
 }
 
+// Estado para a página de participantes itinerantes
 class _ParticipantesItinerantesState extends StatefulWidget {
   final String title;
 
@@ -27,23 +28,22 @@ class _ParticipantesItinerantesState extends StatefulWidget {
 }
 
 class _ParticipantesItinerantesStateState extends State<_ParticipantesItinerantesState> {
-  // Criação do slogn da página
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text(widget.title), // Usa o título passado pelo widget
       ),
       body: Center(
         child: ListView(
           children: <Widget>[
             Container(
-              margin: const EdgeInsets.only(top: 20), // Espaço supeior da imagem
+              margin: const EdgeInsets.only(top: 20),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(40),
                 child: Image.asset(
                   'images/livro.jpg',
-                  width: 50, //Tamanho da imagem
+                  width: 50,
                   height: 50,
                 ),
               ),
@@ -52,17 +52,17 @@ class _ParticipantesItinerantesStateState extends State<_ParticipantesItinerante
             const Text(
               'Universidade sem Fronteiras',
               style: TextStyle(
-                fontSize: 15, // Tamanho da Fonte
-                fontWeight: FontWeight.bold, //Estilo da fonte negrito
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
                 color: Colors.black,
               ),
-              textAlign: TextAlign.center, // Aliando o texto no centro
+              textAlign: TextAlign.center,
             ),
             const SizedBox(height: 10),
             const Divider(
               height: 2,
               color: Colors.black,
-              thickness: 4, // Espesura da linha
+              thickness: 4,
               indent: 10,
               endIndent: 10,
             ),
@@ -73,7 +73,6 @@ class _ParticipantesItinerantesStateState extends State<_ParticipantesItinerante
   }
 }
 
-//Açoes referente a págiana 
 // Widget para o mapa com marcadores
 class MapaComMarcadores extends StatefulWidget {
   const MapaComMarcadores({super.key});
