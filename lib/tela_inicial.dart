@@ -60,7 +60,7 @@ class MyHomePage extends StatelessWidget {
                         'Universidade sem Fronteira',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 22,
+                          fontSize: 20,
                         ),
                       ),
                     ],
@@ -125,9 +125,9 @@ class MyHomePage extends StatelessWidget {
                   title: Row(
                     children: [
                       Image.asset('images/aluno.jpg', width: 30, height: 30),
-                      const SizedBox(width: 45),
+                      const SizedBox(width: 20), // Cria um espaço em branco na horizontal
                       const Text(
-                        'Cadastro dos Participantes',
+                        'Cadastro dos Paricipantes',
                         style: TextStyle(
                           color: Colors.blue,
                           decoration: TextDecoration.underline,
@@ -151,7 +151,7 @@ class MyHomePage extends StatelessWidget {
                   title: Row(
                     children: [
                       Image.asset('images/mapa.jpg', width: 30, height: 30),
-                      const SizedBox(width: 40),
+                      const SizedBox(width: 20),
                       const Text(
                         'Participantes Itinerantes',
                         style: TextStyle(
@@ -170,16 +170,16 @@ class MyHomePage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const CadastroPontosTuristicos(title: 'Cadastro dos Pontos Turísticos',),
+                        builder: (context) => const CadastroPontosTuristicos(title: 'Cadastro Pontos Turísticos',),
                       ),
                     );
                   },
                   title: Row(
                     children: [
                       Image.asset('images/mundo.jpg', width: 30, height: 30),
-                      const SizedBox(width:30 ),
+                      const SizedBox(width:20 ),
                       const Text(
-                        'Cadastro dos Pontos Turísticos',
+                        'Cadastro Pontos Turísticos',
                         style: TextStyle(
                           color: Colors.blue,
                           decoration: TextDecoration.underline,
@@ -198,40 +198,48 @@ class MyHomePage extends StatelessWidget {
 
       //Estrutura do slong da tela
       body: Center(
-        child: ListView(
-          children: <Widget>[
-             Container(
-              margin: const EdgeInsets.only(top: 20), // Adiciona espaço acima da imagem
-              child: ClipRRect(
-              borderRadius: BorderRadius.circular(40),
-              child: Image.asset(
-                'images/livro.jpg',
-                width: 50,
-                height: 50,
+      child: ListView(
+        children: <Widget>[
+          Container(
+          color: Colors.blue, // Define a cor de fundo como azul
+          padding: const EdgeInsets.symmetric(vertical: 10), // Adiciona um espaçamento interno
+          child: Column(
+            children: <Widget>[
+              Container(
+                margin: const EdgeInsets.only(top: 20), // Adiciona espaço acima da imagem
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(40),
+                  child: Image.asset(
+                    'images/livro.jpg',
+                    width: 70,
+                    height: 70,
+                  ),
+                ),
               ),
-            ),
+              const SizedBox(height: 10),
+              const Text(
+                'Universidade sem Fronteiras',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold, //Deixa o texto em negrito
+                  color: Colors.white, // Adiciona a cor branca ao texto
+                ),
+                textAlign: TextAlign.center, // deixando o texto centralizado
+              ),
+              
+              const SizedBox(height: 15), // Espaço em branco antes da linha horizontal
+              const Divider(
+                height: 10,
+                color: Colors.white, // Ajuste da  cor e criação de uma linha orizontal 
+                thickness: 4, // Ajuste a espessura da linha 
+                indent: 12, // Espaçamento à esquerda
+                endIndent: 10, // Espaçamento à direita
+              ),
+            ],
           ),
-            const SizedBox(height: 5),
-            const Text(
-              'Universidade sem Fronteiras',
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.bold, //Deixa o texto em negrito
-                 color: Colors.black, // Adiciona a cor preta ao texto
-              ),
-               textAlign: TextAlign.center, // deixando o texto centralizado
-            ),
-            const SizedBox(height: 10),
-            const Divider(
-              height: 2,
-              color: Colors.black, // Ajuste da  cor e criação de uma linha orizontal 
-              thickness: 4, // Ajuste a espessura da linha 
-              indent: 10, // Espaçamento à esquerda
-              endIndent: 10, // Espaçamento à direita
-            ),
+        ),
 
            //Estrutura da tela principal 
-
             ListTile(
               title: Row(
                 children: [
@@ -256,7 +264,7 @@ class MyHomePage extends StatelessWidget {
               title: Row(
                 children: [
                   Image.asset('images/universidade.jpg', width: 30, height: 30),
-                  const SizedBox(width: 30),
+                  const SizedBox(width: 20),
                   const Text(
                     'Universidades Participantes',
                     style: TextStyle(
@@ -282,7 +290,7 @@ class MyHomePage extends StatelessWidget {
               title: Row(
                 children: [
                   Image.asset('images/aluno.jpg', width: 30, height: 30),
-                  const SizedBox(width: 45),
+                  const SizedBox(width: 20),
                   const Text(
                     'Acompanhamento de Inscrição',
                     style: TextStyle(
@@ -306,7 +314,7 @@ class MyHomePage extends StatelessWidget {
               title: Row(
                 children: [
                   Image.asset('images/mundo.jpg', width: 30, height: 30),
-                  const SizedBox(width: 45),
+                  const SizedBox(width: 25),
                   const Text(
                     'Participantes Itinerantes',
                     style: TextStyle(
@@ -333,7 +341,7 @@ class MyHomePage extends StatelessWidget {
               title: Row(
                 children: [
                   Image.asset('images/mundo.jpg', width: 30, height: 30),
-                  const SizedBox(width: 40),
+                  const SizedBox(width: 20),
                   const Text(
                     'Pontos Turísticos',
                     style: TextStyle(
