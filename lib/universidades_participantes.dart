@@ -36,7 +36,7 @@ class _UniversidadesParticipantesStateState extends State<_UniversidadesParticip
                   ),
                   const SizedBox(height: 10),
                   const Text(
-                    'Universidade sem Fronteiras',
+                    'MobIFAPP',
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold, //Deixa o texto em negrito
