@@ -12,7 +12,7 @@ class ParticipantesItinerantes extends StatelessWidget {
         title: const Text('Participantes Itinerantes'),
       ),
       // Chama o estado _ParticipantesItinerantesState, passando o título
-      body: const _ParticipantesItinerantesState(title: 'Universidade sem Fronteiras'),
+      body: const _ParticipantesItinerantesState(title: 'MobIFAPP'),
     );
   }
 }
@@ -50,7 +50,7 @@ class _ParticipantesItinerantesStateState extends State<_ParticipantesItinerante
             ),
             const SizedBox(height: 5),
             const Text(
-              'Universidade sem Fronteiras',
+              'MobIFAPP',
               style: TextStyle(
                 fontSize: 15,
                 fontWeight: FontWeight.bold,
