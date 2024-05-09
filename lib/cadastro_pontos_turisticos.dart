@@ -12,7 +12,7 @@ class CadastroPontosTuristicos extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Cadastro dos Pontos Turístico'),
       ),
-      body: const _CadastroPontosTuristicosState(title: 'Universidade sem Fronteiras'),
+      body: const _CadastroPontosTuristicosState(title: 'MobIFAPP'),
     );
   }
 }
@@ -55,7 +55,7 @@ class _CadastroPontosTuristicosStateState extends State<_CadastroPontosTuristico
                   ),
                   const SizedBox(height: 10),
                   const Text(
-                    'Universidade sem Fronteiras',
+                    'MobIFAPP',
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold, //Deixa o texto em negrito
