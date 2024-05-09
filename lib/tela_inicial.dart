@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: MyHomePage(title: 'Universidade sem Fronteiras'),
+      home: MyHomePage(title: 'MobIFAPP'),
     );
   }
 }
@@ -57,7 +57,7 @@ class MyHomePage extends StatelessWidget {
                       ),
                       SizedBox(height: 20),
                       Text(
-                        'Universidade sem Fronteira',
+                        'MobIFAPP',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 20,
@@ -218,7 +218,7 @@ class MyHomePage extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               const Text(
-                'Universidade sem Fronteiras',
+                'MobIFAPP',
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold, //Deixa o texto em negrito
