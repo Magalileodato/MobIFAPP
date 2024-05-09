@@ -172,7 +172,7 @@ class RegiaoMetropolitanaPage extends StatelessWidget {
                   decoration: TextDecoration.underline,
                 ),
               ),
-              Image.asset('assets/images/paodeacucar.jpg',
+              Image.asset('images/paodeacucar.jpg',
                   width: 400, height: 400),
               const Text(
                 'Oferece uma vista panorâmica da cidade',
@@ -357,7 +357,7 @@ class RegiaoDosLagosTab extends StatelessWidget {
                   decoration: TextDecoration.underline,
                 ),
               ),
-              Image.asset('assets/images/fortecabofrio.jpg',
+              Image.asset('images/fortecabofrio.jpg',
                   width: 400, height: 400),
               Text(
                 'Uma das praias mais lindas da cidade.',
