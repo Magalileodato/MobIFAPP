@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: GuiaApoio(title: 'MobIFAAP'),
+    home: GuiaApoio(title: 'MobIFAPP'),
   ));
 }
 
