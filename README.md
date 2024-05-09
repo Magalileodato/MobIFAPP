@@ -1,4 +1,4 @@
-# app_universidade_sem_fronteiras
+# MobIAPP
 
 A new Flutter project.
 
