@@ -8,6 +8,7 @@ import 'cadastro_pontos_turisticos.dart';
 import 'participantes_itinerantes.dart';
 import 'pontos_turisticos.dart';
 import 'universidades_participantes.dart';
+import 'guia_apoio.dart';
 
 
 void main() {
