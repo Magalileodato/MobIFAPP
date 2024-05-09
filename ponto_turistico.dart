@@ -148,7 +148,7 @@ class RegiaoMetropolitanaPage extends StatelessWidget {
                   decoration: TextDecoration.underline,
                 ),
               ),
-              Image.asset('assets/images/cristo.jpg', width: 400, height: 400),
+              Image.asset('images/cristo.jpg', width: 400, height: 400),
               const Text(
                 'Uma das Sete Maravilhas do Mundo Moderno.',
                 textAlign: TextAlign.center,
@@ -197,7 +197,7 @@ class RegiaoMetropolitanaPage extends StatelessWidget {
                   decoration: TextDecoration.underline,
                 ),
               ),
-              Image.asset('assets/images/portoo.png', width: 400, height: 400),
+              Image.asset('images/portoo.png', width: 400, height: 400),
               const Text(
                 'Ela está localizada na região do Porto Maravilha, oferecendo uma vista panorâmica incrível da cidade do Rio de Janeiro, incluindo a Baía de Guanabara, o Pão de Açúcar, o Cristo Redentor e outros pontos turísticos famosos.',
                 textAlign: TextAlign.center,
@@ -221,7 +221,7 @@ class RegiaoMetropolitanaPage extends StatelessWidget {
                   decoration: TextDecoration.underline,
                 ),
               ),
-              Image.asset('assets/images/maracana.JPG',
+              Image.asset('images/maracana.JPG',
                   width: 400, height: 400),
               const Text(
                 'O Estádio do Maracanã é um dos estádios de futebol mais famosos do mundo e um ícone da cidade do Rio de Janeiro. Inaugurado em 1950 para sediar a Copa do Mundo da FIFA, o estádio já recebeu grandes eventos esportivos e musicais ao longo dos anos.',
@@ -257,7 +257,7 @@ class RegiaoDosLagosTab extends StatelessWidget {
                   decoration: TextDecoration.underline,
                 ),
               ),
-              Image.asset('assets/images/ruadaspedras.jpg',
+              Image.asset('images/ruadaspedras.jpg',
                   width: 400, height: 400),
               Text(
                 'Famosa por sua vida noturna e lojas.',
@@ -282,7 +282,7 @@ class RegiaoDosLagosTab extends StatelessWidget {
                   decoration: TextDecoration.underline,
                 ),
               ),
-              Image.asset('assets/images/praiadegeribabuzios.JPG',
+              Image.asset('images/praiadegeribabuzios.JPG',
                   width: 400, height: 400),
               Text(
                 'Famosa por suas ondas fortes e ambiente jovem.',
@@ -307,7 +307,7 @@ class RegiaoDosLagosTab extends StatelessWidget {
                   decoration: TextDecoration.underline,
                 ),
               ),
-              Image.asset('assets/images/praiadofornoarraial.JPG',
+              Image.asset('images/praiadofornoarraial.JPG',
                   width: 400, height: 400),
               Text(
                 'A Praia do Forno é uma bela praia de areias brancas e águas cristalinas em Arraial do Cabo. Para chegar até ela, é possível fazer uma trilha curta com uma vista espetacular ou pegar um barco no cais do centro da cidade. É um lugar ideal para relaxar e aproveitar a natureza.',
@@ -332,7 +332,7 @@ class RegiaoDosLagosTab extends StatelessWidget {
                   decoration: TextDecoration.underline,
                 ),
               ),
-              Image.asset('assets/images/praiadaferradura.JPG',
+              Image.asset('images/praiadaferradura.JPG',
                   width: 400, height: 400),
               Text(
                 'Conhecida por sua forma de ferradura e águas calmas.',
@@ -382,7 +382,7 @@ class RegiaoDosLagosTab extends StatelessWidget {
                   decoration: TextDecoration.underline,
                 ),
               ),
-              Image.asset('assets/images/praiadofarol-arraialdocabo.JPG',
+              Image.asset('images/praiadofarol-arraialdocabo.JPG',
                   width: 400, height: 400),
               Text(
                 'Localizada em Arraial do Cabo, é uma das praias mais bonitas do Brasil, conhecida por suas águas cristalinas e areia branca. O acesso à praia é feito somente por barco, e é necessário autorização prévia do ICMBio.',
@@ -407,7 +407,7 @@ class RegiaoDosLagosTab extends StatelessWidget {
                   decoration: TextDecoration.underline,
                 ),
               ),
-              Image.asset('assets/images/praia-de-joao-fernandes.jpg',
+              Image.asset('images/praia-de-joao-fernandes.jpg',
                   width: 400, height: 400),
               Text(
                 'Praia calma e de águas claras, ideal para mergulho e prática de esportes náuticos.',
@@ -432,7 +432,7 @@ class RegiaoDosLagosTab extends StatelessWidget {
                   decoration: TextDecoration.underline,
                 ),
               ),
-              Image.asset('assets/images/praiadegeribabuzios.JPG',
+              Image.asset('images/praiadegeribabuzios.JPG',
                   width: 400, height: 400),
               Text(
                 'Famosa pelas suas ondas ideais para o surf.',
@@ -457,7 +457,7 @@ class RegiaoDosLagosTab extends StatelessWidget {
                   decoration: TextDecoration.underline,
                 ),
               ),
-              Image.asset('assets/images/OrlaBardot-buzios.jpg',
+              Image.asset('images/OrlaBardot-buzios.jpg',
                   width: 400, height: 400),
               Text(
                 'A Orla Bardot é uma famosa avenida em Búzios, localizada na península da Armação dos Búzios, no estado do Rio de Janeiro, Brasil. Esta avenida é nomeada em homenagem à atriz francesa Brigitte Bardot, que visitou a cidade em 1964, deixando uma marca duradoura em sua história turística.',
@@ -482,7 +482,7 @@ class RegiaoDosLagosTab extends StatelessWidget {
                   decoration: TextDecoration.underline,
                 ),
               ),
-              Image.asset('assets/images/ruadaspedras.jpg',
+              Image.asset('images/ruadaspedras.jpg',
                   width: 400, height: 400),
               Text(
                 'Centro gastronômico e comercial.',
@@ -507,7 +507,7 @@ class RegiaoDosLagosTab extends StatelessWidget {
                   decoration: TextDecoration.underline,
                 ),
               ),
-              Image.asset('assets/images/praiadaferradura.JPG',
+              Image.asset('images/praiadaferradura.JPG',
                   width: 400, height: 400),
               Text(
                 'Praia de águas calmas e claras, com uma característica forma de ferradura.',
@@ -532,7 +532,7 @@ class RegiaoDosLagosTab extends StatelessWidget {
                   decoration: TextDecoration.underline,
                 ),
               ),
-              Image.asset('assets/images/praiadeitauna-saquarema.jpg',
+              Image.asset('images/praiadeitauna-saquarema.jpg',
                   width: 400, height: 400),
               Text(
                 'A Praia de Itaúna é famosa por suas ondas ideais para a prática de surfe. Localizada em Saquarema, é um destino popular para surfistas de todo o Brasil e do mundo.',
@@ -568,7 +568,7 @@ class RegiaoSulFluminenseTab extends StatelessWidget {
                   decoration: TextDecoration.underline,
                 ),
               ),
-              Image.asset('assets/images/centrohistorico.jpg',
+              Image.asset('images/centrohistorico.jpg',
                   width: 400, height: 400),
               Text(
                 'Preserva a arquitetura colonial portuguesa.',
@@ -593,7 +593,7 @@ class RegiaoSulFluminenseTab extends StatelessWidget {
                   decoration: TextDecoration.underline,
                 ),
               ),
-              Image.asset('assets/images/cachadarco.jpg',
+              Image.asset('images/cachadarco.jpg',
                   width: 400, height: 400),
               Text(
                 'Uma das praias mais bonitas da região.',
@@ -618,7 +618,7 @@ class RegiaoSulFluminenseTab extends StatelessWidget {
                   decoration: TextDecoration.underline,
                 ),
               ),
-              Image.asset('assets/images/praiadosonoparaty.jpg',
+              Image.asset('images/praiadosonoparaty.jpg',
                   width: 400, height: 400),
               Text(
                 'Localizada em Paraty, a Praia do Sono é conhecida por sua beleza natural intocada e atmosfera tranquila. É acessível apenas por trilha ou barco, o que a torna um destino popular para os amantes da natureza em busca de uma experiência mais isolada.',
