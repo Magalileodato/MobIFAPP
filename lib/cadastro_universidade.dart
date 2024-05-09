@@ -9,7 +9,7 @@ class CadastroUniversidade extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Cadastro das Universidades'),
       ),
-      body: const _CadastroUniversidadeState(title: 'Universidade sem Fronteiras'),
+      body: const _CadastroUniversidadeState(title: 'MobIFAPP'),
     );
   }
 }
@@ -52,7 +52,7 @@ class _CadastroUniversidadeStateState extends State<_CadastroUniversidadeState> 
                   ),
                   const SizedBox(height: 10),
                   const Text(
-                    'Universidade sem Fronteiras',
+                    'MobIFAPP',
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold, //Deixa o texto em negrito
