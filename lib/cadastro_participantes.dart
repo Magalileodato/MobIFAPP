@@ -9,7 +9,7 @@ class CadastroParticipantes extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Cadastro dos Participantes'),
       ),
-      body: const _CadastroParticipantesState(title: 'Universidade sem Fronteiras'),
+      body: const _CadastroParticipantesState(title: 'MobIFAPP'),
     );
   }
 }
@@ -52,7 +52,7 @@ class _CadastroParticipantesStateState extends State<_CadastroParticipantesState
                   ),
                   const SizedBox(height: 10),
                   const Text(
-                    'Universidade sem Fronteiras',
+                    'MobIFAPP',
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold, //Deixa o texto em negrito
