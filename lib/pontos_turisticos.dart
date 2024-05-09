@@ -12,7 +12,7 @@ class PontosTuristicos extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Pontos Turísticos'),
       ),
-      body: const _PontosTuristicosState(title: 'Universidade sem Fronteiras'),
+      body: const _PontosTuristicosState(title: 'MobIFAPP'),
     );
   }
 }
@@ -55,7 +55,7 @@ class _PontosTuristicosStateState extends State<_PontosTuristicosState> {
                   ),
                   const SizedBox(height: 10),
                   const Text(
-                    'Universidade sem Fronteiras',
+                    'MobIFAPP',
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold, //Deixa o texto em negrito
