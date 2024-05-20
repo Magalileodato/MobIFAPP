@@ -6,7 +6,7 @@ import 'cadastro_universidade.dart';
 import 'cadastro_participantes.dart';
 import 'cadastro_pontos_turisticos.dart';
 import 'participantes_itinerantes.dart';
-import 'pontos_turisticos.dart';
+import 'ponto_turistico.dart';
 import 'universidades_participantes.dart';
 import 'guia_apoio.dart';
 
