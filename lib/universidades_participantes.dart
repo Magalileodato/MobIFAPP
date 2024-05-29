@@ -1,54 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
 
-// Widget para a página de participantes itinerantes
-class ParticipantesItinerantes extends StatelessWidget {
-  const ParticipantesItinerantes({Key? key, required this.title})
-      : super(key: key);
-
+class InstituicaoConveniada extends StatelessWidget {
   final String title;
+
+  const InstituicaoConveniada({Key? key, required this.title})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Participantes Itinerantes'),
-      ),
-      // Chama o estado ParticipantesItinerantesScreen, passando o título
-      body: ParticipantesItinerantesScreen(title: title),
-    );
-  }
-}
-
-// Estado para a página de participantes itinerantes
-class ParticipantesItinerantesScreen extends StatefulWidget {
-  final String title;
-
-  const ParticipantesItinerantesScreen({Key? key, required this.title})
-      : super(key: key);
-
-  @override
-  State<ParticipantesItinerantesScreen> createState() =>
-      ParticipantesItinerantesScreenState();
-}
-
-class ParticipantesItinerantesScreenState
-    extends State<ParticipantesItinerantesScreen> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title), // Usa o título passado pelo widget
+        title: Text(title),
       ),
       body: Center(
         child: ListView(
           children: <Widget>[
             Container(
-              margin: const EdgeInsets.only(top: 20),
+              margin:
+                  const EdgeInsets.only(top: 20), // Espaço superior da imagem
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(40),
                 child: Image.asset(
-                  'assets/images/itinerante.JPG',
+                  'assets/images/aluno.JPG',
                   width: 50, // Tamanho da imagem
                   height: 50,
                 ),
@@ -58,165 +31,93 @@ class ParticipantesItinerantesScreenState
             const Text(
               'MobIFAPP',
               style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
+                fontSize: 15, // Tamanho da Fonte
+                fontWeight: FontWeight.bold, // Estilo da fonte negrito
                 color: Colors.black,
               ),
-              textAlign: TextAlign.center,
+              textAlign: TextAlign.center, // Alinhando o texto no centro
             ),
             const SizedBox(height: 10),
             const Divider(
               height: 2,
               color: Colors.black,
-              thickness: 4,
+              thickness: 4, // Espessura da linha
               indent: 10,
               endIndent: 10,
             ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-// Widget para o mapa com marcadores
-class MapaComMarcadores extends StatefulWidget {
-  const MapaComMarcadores({super.key});
-
-  @override
-  MapaComMarcadoresState createState() => MapaComMarcadoresState();
-}
-
-class MapaComMarcadoresState extends State<MapaComMarcadores> {
-  late GoogleMapController
-      mapController; // Marcando mapController como late para indicar que ela será inicializada posteriormente.
-
-  final LatLng _centroMapa = const LatLng(-23.550520, -46.633308);
-  final List<Marker> _markers = []; // Lista de marcadores
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Mapa com Marcadores'),
-      ),
-      body: GoogleMap(
-        initialCameraPosition: CameraPosition(
-          target: _centroMapa,
-          zoom: 10.0,
-        ),
-        onMapCreated: (GoogleMapController controller) {
-          mapController = controller;
-          setState(() {
-            _markers.add(
-              const Marker(
-                markerId: MarkerId('id_1'),
-                position: LatLng(-23.550520, -46.633308),
-                infoWindow: InfoWindow(
-                  title: 'Marcador 1',
-                  snippet: 'Descrição do marcador 1',
-                ),
-              ),
-            );
-          });
-        },
-        markers: Set.from(_markers),
-      ),
-    );
-  }
-}
-
-// Widget para a página de universidades participantes
-class UniversidadesParticipantes extends StatelessWidget {
-  const UniversidadesParticipantes({Key? key, required this.title})
-      : super(key: key);
-
-  final String title;
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Universidades Participantes'),
-      ),
-      body: UniversidadesParticipantesScreen(title: title),
-    );
-  }
-}
-
-class UniversidadesParticipantesScreen extends StatefulWidget {
-  final String title;
-
-  const UniversidadesParticipantesScreen({Key? key, required this.title})
-      : super(key: key);
-
-  @override
-  State<UniversidadesParticipantesScreen> createState() =>
-      UniversidadesParticipantesScreenState();
-}
-
-class UniversidadesParticipantesScreenState
-    extends State<UniversidadesParticipantesScreen> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: ListView(
-          children: <Widget>[
-            Container(
-              color: Colors.blue, // Define a cor de fundo como azul
-              padding: const EdgeInsets.symmetric(
-                  vertical: 10), // Adiciona um espaçamento interno
-              child: Column(
-                children: <Widget>[
-                  Container(
-                    margin: const EdgeInsets.only(
-                        top: 20), // Adiciona espaço acima da imagem
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(40),
-                      child: Image.asset(
-                        'assets/images/livro.jpg',
-                        width: 70,
-                        height: 70,
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 10),
-                  const Text(
-                    'MobIFAPP',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold, // Deixa o texto em negrito
-                      color: Colors.white, // Adiciona a cor branca ao texto
-                    ),
-                    textAlign:
-                        TextAlign.center, // Deixando o texto centralizado
-                  ),
-                  const SizedBox(
-                      height: 15), // Espaço em branco antes da linha horizontal
-                  const Divider(
-                    height: 10,
-                    color: Colors
-                        .white, // Ajuste da cor e criação de uma linha horizontal
-                    thickness: 4, // Ajuste a espessura da linha
-                    indent: 12, // Espaçamento à esquerda
-                    endIndent: 10, // Espaçamento à direita
-                  ),
-                ],
-              ),
+            // Informações das instituições conveniadas
+            _buildInstituicaoConveniada(
+              nome: 'Universidade X',
+              curso: 'Engenharia de Software',
+              pais: 'Brasil',
+              cidade: 'São Paulo',
+              descricaoVaga: 'Desenvolvedor Mobile',
+              quantidadeVagas: 5,
+              dataAberturaEdital: '01/07/2024',
+              dataFinalizacaoEdital: '15/07/2024',
+              linkEdital: 'https://exemplo.com/edital_universidade_x.pdf',
+            ),
+            const SizedBox(height: 20),
+            _buildInstituicaoConveniada(
+              nome: 'Universidade Y',
+              curso: 'Ciência da Computação',
+              pais: 'Estados Unidos',
+              cidade: 'Nova York',
+              descricaoVaga: 'Analista de Dados',
+              quantidadeVagas: 3,
+              dataAberturaEdital: '10/07/2024',
+              dataFinalizacaoEdital: '25/07/2024',
+              linkEdital: 'https://exemplo.com/edital_universidade_y.pdf',
             ),
           ],
         ),
       ),
     );
   }
-}
 
-void main() {
-  runApp(const MaterialApp(
-    home: ParticipantesItinerantes(title: 'MobIFAPP'),
-  ));
+  Widget _buildInstituicaoConveniada({
+    required String nome,
+    required String curso,
+    required String pais,
+    required String cidade,
+    required String descricaoVaga,
+    required int quantidadeVagas,
+    required String dataAberturaEdital,
+    required String dataFinalizacaoEdital,
+    required String linkEdital,
+  }) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Instituição: $nome - $curso',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        SizedBox(height: 5),
+        Text('País: $pais - Cidade: $cidade'),
+        SizedBox(height: 5),
+        Text('Descrição da Vaga: $descricaoVaga - Vagas: $quantidadeVagas'),
+        SizedBox(height: 5),
+        Text('Abertura do Edital: $dataAberturaEdital'),
+        SizedBox(height: 5),
+        Text('Finalização do Edital: $dataFinalizacaoEdital'),
+        SizedBox(height: 5),
+        TextButton(
+          onPressed: () {
+            // Lógica para abrir o link do edital
+            // Aqui você pode usar o pacote url_launcher para abrir o link
+          },
+          child:
+              Text('Visualizar Edital', style: TextStyle(color: Colors.blue)),
+        ),
+        const Divider(
+          height: 20,
+          color: Colors.black,
+          thickness: 1, // Espessura da linha
+          indent: 10,
+          endIndent: 10,
+        ),
+      ],
+    );
+  }
 }
