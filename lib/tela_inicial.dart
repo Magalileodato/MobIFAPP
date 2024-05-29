@@ -7,7 +7,7 @@ import 'cadastro_universidade.dart';
 import 'cadastro_participantes.dart';
 import 'cadastro_pontos_turisticos.dart';
 import 'participantes_itinerantes.dart';
-import 'pontos_turisticos.dart';
+import 'ponto_turistico.dart';
 import 'universidades_participantes.dart';
 import 'guia_apoio.dart';
 import 'servidor_temporario.dart';
@@ -56,8 +56,7 @@ class MyHomePage extends StatelessWidget {
                     children: [
                       CircleAvatar(
                         radius: 40,
-                        backgroundImage:
-                            AssetImage('assets/images/livro.JPG'),
+                        backgroundImage: AssetImage('assets/images/livro.JPG'),
                       ),
                       SizedBox(height: 20),
                       Text(
@@ -167,7 +166,7 @@ class MyHomePage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const MobilidadeInternacional(
+                        builder: (context) => const ParticipantesItinerantes(
                           title:
                               'Mobilidade Internacional Servidor / Estudante',
                         ),
@@ -265,7 +264,7 @@ class MyHomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const InstituicaoConveniada(
+                    builder: (context) => const ParticipantesItinerantes(
                       title: 'Instituições Conveniadas',
                     ),
                   ),
@@ -299,8 +298,7 @@ class MyHomePage extends StatelessWidget {
               },
               title: Row(
                 children: [
-                  Image.asset('assets/images/aluno.JPG',
-                      width: 55, height: 55),
+                  Image.asset('assets/images/aluno.JPG', width: 55, height: 55),
                   const SizedBox(width: 20),
                   const Text(
                     'Acompanhamento de Inscrição',
@@ -342,7 +340,7 @@ class MyHomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const MobilidadeInternacional(
+                    builder: (context) => const ParticipantesItinerantes(
                       title: 'Participante em Mobilidade Internacional',
                     ),
                   ),
