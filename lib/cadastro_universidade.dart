@@ -23,7 +23,7 @@ class CadastroInstituicaoConveniada extends StatelessWidget {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(40),
                   child: Image.asset(
-                    'assets/images/livro.jpg',
+                    'assets/images/universidade.JPG',
                     width: 100,
                     height: 100,
                   ),
