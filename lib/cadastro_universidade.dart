@@ -1,84 +1,136 @@
 import 'package:flutter/material.dart';
 
-class CadastroUniversidade extends StatelessWidget {
-  const CadastroUniversidade ({Key? key, required String title}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Cadastro das Universidades'),
-      ),
-      body: const _CadastroUniversidadeState(title: 'MobIFAPP'),
-    );
-  }
-}
-
-class _CadastroUniversidadeState extends StatefulWidget {
+class CadastroInstituicaoConveniada extends StatelessWidget {
   final String title;
 
-  const _CadastroUniversidadeState({Key? key, required this.title}) : super(key: key);
+  const CadastroInstituicaoConveniada({Key? key, required this.title})
+      : super(key: key);
 
-  @override
-  State<_CadastroUniversidadeState> createState() => _CadastroUniversidadeStateState();
-}
-
-class _CadastroUniversidadeStateState extends State<_CadastroUniversidadeState> {
-  // Criação do slogn da página
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text(title),
       ),
-      body: Center(
-        child: ListView(
-          children: <Widget>[
-            Container(
-              color: Colors.blue, // Define a cor de fundo como azul
-              padding: const EdgeInsets.symmetric(vertical: 10), // Adiciona um espaçamento interno
-              child: Column(
-                children: <Widget>[
-                  Container(
-                    margin: const EdgeInsets.only(top: 20), // Adiciona espaço acima da imagem
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(40),
-                      child: Image.asset(
-                        'images/livro.jpg',
-                        width: 70,
-                        height: 70,
-                      ),
-                    ),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              Container(
+                margin: const EdgeInsets.only(top: 20),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(40),
+                  child: Image.asset(
+                    'assets/images/livro.jpg',
+                    width: 100,
+                    height: 100,
                   ),
-                  const SizedBox(height: 10),
-                  const Text(
-                    'MobIFAPP',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold, //Deixa o texto em negrito
-                      color: Colors.white, // Adiciona a cor branca ao texto
-                    ),
-                    textAlign: TextAlign.center, // deixando o texto centralizado
+                ),
+              ),
+              const SizedBox(height: 10),
+              const Text(
+                'MobIFAPP',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 20),
+              _buildTextField('Nome da Instituição'),
+              const SizedBox(height: 10),
+              _buildCountryDropdown('País'),
+              const SizedBox(height: 10),
+              _buildRegionDropdown('UF / Região'),
+              const SizedBox(height: 10),
+              _buildTextField('Cidade'),
+              const SizedBox(height: 10),
+              _buildCourseTypeDropdown('Tipo de Curso'),
+              const SizedBox(height: 10),
+              _buildNumericTextField('Quantidade de Vagas'),
+              const SizedBox(height: 10),
+              _buildCourseDropdown('Curso'),
+              const SizedBox(height: 10),
+              _buildFileAttachmentOption(),
+              const SizedBox(height: 20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  ElevatedButton(
+                    onPressed: () {
+                      // Adicionar lógica para anexar arquivo
+                    },
+                    child: const Text('Anexar Arquivo'),
                   ),
-                  const SizedBox(height: 15), // Espaço em branco antes da linha horizontal
-                  const Divider(
-                    height: 10,
-                    color: Colors.white, // Ajuste da  cor e criação de uma linha orizontal 
-                    thickness: 4, // Ajuste a espessura da linha 
-                    indent: 12, // Espaçamento à esquerda
-                    endIndent: 10, // Espaçamento à direita
+                  ElevatedButton(
+                    onPressed: () {
+                      // Adicionar lógica para salvar os dados
+                    },
+                    child: const Text('Salvar'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    child: const Text('Voltar'),
                   ),
                 ],
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
   }
+
+  Widget _buildTextField(String labelText) {
+    return TextField(
+      decoration: InputDecoration(
+        labelText: labelText,
+        border: OutlineInputBorder(),
+      ),
+    );
+  }
+
+  Widget _buildNumericTextField(String labelText) {
+    return TextField(
+      decoration: InputDecoration(
+        labelText: labelText,
+        border: OutlineInputBorder(),
+      ),
+      keyboardType: TextInputType.number,
+    );
+  }
+
+  Widget _buildCountryDropdown(String labelText) {
+    // Aqui você pode adicionar a lógica para preencher o dropdown com todos os países
+    return _buildTextField(labelText);
+  }
+
+  Widget _buildRegionDropdown(String labelText) {
+    // Aqui você pode adicionar a lógica para preencher o dropdown com as regiões do país selecionado
+    return _buildTextField(labelText);
+  }
+
+  Widget _buildCourseTypeDropdown(String labelText) {
+    // Aqui você pode adicionar a lógica para preencher o dropdown com os tipos de curso disponíveis
+    return _buildTextField(labelText);
+  }
+
+  Widget _buildCourseDropdown(String labelText) {
+    // Aqui você pode adicionar a lógica para preencher o dropdown com todos os cursos disponíveis
+    return _buildTextField(labelText);
+  }
+
+  Widget _buildFileAttachmentOption() {
+    return Row(
+      children: [
+        Checkbox(value: false, onChanged: (value) {}),
+        Text('Anexar Arquivo'),
+      ],
+    );
+  }
 }
-
-//Açoes referente a págiana 
-
-
-
