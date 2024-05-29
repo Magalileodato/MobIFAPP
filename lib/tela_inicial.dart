@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
-//Importanto as paginas 
+// Importing pages
+import 'home.dart';
 import 'acompanhamento_inscricao.dart';
 import 'cadastro_universidade.dart';
 import 'cadastro_participantes.dart';
 import 'cadastro_pontos_turisticos.dart';
 import 'participantes_itinerantes.dart';
-import 'ponto_turistico.dart';
+import 'pontos_turisticos.dart';
 import 'universidades_participantes.dart';
 import 'guia_apoio.dart';
-
+import 'servidor_temporario.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,6 +37,7 @@ class MyHomePage extends StatelessWidget {
     double screenHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
+      backgroundColor: const Color.fromARGB(235, 190, 213, 243),
       appBar: AppBar(
         title: Text(title),
       ),
@@ -53,319 +55,337 @@ class MyHomePage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       CircleAvatar(
-                        radius: 30,
-                        backgroundImage: AssetImage('images/livro.jpg'),
+                        radius: 40,
+                        backgroundImage:
+                            AssetImage('assets/images/livro.JPG'),
                       ),
                       SizedBox(height: 20),
                       Text(
                         'MobIFAPP',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 20,
+                          fontSize:
+                              20, // Updated font size for better visibility
                         ),
                       ),
                     ],
                   ),
                 ),
                 ListTile(
-                  onTap: () {
-                    // Ações ainda que devem ser feitas para acesso a outra tela
-                  },
-                  title: Row(
-                    children: [
-                      Image.asset('images/home.jpg', width: 30, height: 30),
-                      const SizedBox(width: 20),
-                      const Text(
-                        'Home',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          decoration: TextDecoration.underline,
-                        ),
-                      ),
-                    ],
+                  leading: Image.asset('assets/images/home.JPG',
+                      width: 55, height: 55),
+                  title: const Text(
+                    'Home',
+                    style: TextStyle(
+                      color: Colors.blue,
+                    ),
                   ),
-                ),
-                const SizedBox(height: 20), // Espaço de 20 pixels entre os títulos
-
-                ListTile(
                   onTap: () {
-                    // Realiza a ação de navegar para  a nova página quando o item for tocado
-                    Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                       builder: (context) => const CadastroUniversidade(title: 'Cadastro das Universidades',),
-                      ),
-                    );
-                  },
-                  title: Row(
-                    children: [
-                      Image.asset('images/universidade.jpg', width: 30, height: 30),
-                      const SizedBox(width: 20),
-                      const Text(
-                        'Cadastro das Universidades',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          decoration: TextDecoration.underline,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(height: 20), // Espaço de 20 pixels entre os títulos
-
-                ListTile(
-                  onTap: () {
-                     // Realiza a ação de navegar para  a nova página quando o item for tocado
-                        Navigator.push(
-                        context,
-                          MaterialPageRoute(
-                            builder: (context) => const CadastroParticipantes(title: 'Cadastro dos Participantes',),// Esta linha adiona um titulo a pagina que será aberta
-                          ),
-                        );
-                  },
-                  title: Row(
-                    children: [
-                      Image.asset('images/aluno.jpg', width: 30, height: 30),
-                      const SizedBox(width: 20), // Cria um espaço em branco na horizontal
-                      const Text(
-                        'Cadastro dos Paricipantes',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          decoration: TextDecoration.underline,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(height: 20), // Espaço de 20 pixels entre os títulos
-
-                ListTile(
-                  onTap: () {
-                    // Realiza a ação de navegar para  a nova página quando o item for tocado
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const ParticipantesItinerantes(title: 'Participantes Itinerantes',),
-                        ),
-                      );
-                  },
-                  title: Row(
-                    children: [
-                      Image.asset('images/mapa.jpg', width: 30, height: 30),
-                      const SizedBox(width: 20),
-                      const Text(
-                        'Participantes Itinerantes',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          decoration: TextDecoration.underline,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(height: 20), // Espaço de 20 pixels entre os títulos
-
-                ListTile(
-                  onTap: () {
-                    // Realiza a ação de navegar para  a nova página quando o item for tocado
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const CadastroPontosTuristicos(title: 'Cadastro Pontos Turísticos',),
+                        builder: (context) => const Home(
+                          title: 'Home',
+                        ),
                       ),
                     );
                   },
-                  title: Row(
-                    children: [
-                      Image.asset('images/mundo.jpg', width: 30, height: 30),
-                      const SizedBox(width:20 ),
-                      const Text(
-                        'Cadastro Pontos Turísticos',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          decoration: TextDecoration.underline,
+                ),
+                ListTile(
+                  leading: Image.asset('assets/images/universidade.JPG',
+                      width: 55, height: 55),
+                  title: const Text(
+                    'Cadastro das Instituições Conveniadas',
+                    style: TextStyle(
+                      color: Colors.blue,
+                    ),
+                  ),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            const CadastroInstituicaoConveniada(
+                          title: 'Cadastro das Instituições Conveniadas',
                         ),
                       ),
-                    ],
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: Image.asset('assets/images/aluno.JPG',
+                      width: 55, height: 55),
+                  title: const Text(
+                    'Cadastro Participante Mobilidade Internacional',
+                    style: TextStyle(
+                      color: Colors.blue,
+                    ),
                   ),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            const CadastroMobilidadeInternacional(
+                          title:
+                              'Cadastro Participante Mobilidade Internacional',
+                        ),
+                      ),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: Image.asset('assets/images/aluno.JPG',
+                      width: 55, height: 55),
+                  title: const Text(
+                    'Cadastro Para Servidor Temporário - Edital & Inscrições',
+                    style: TextStyle(
+                      color: Colors.blue,
+                    ),
+                  ),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ServidorTemporario(
+                          title: 'Cadastro Inscrições Servidor Temporário IFRJ',
+                        ),
+                      ),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: Image.asset('assets/images/mapa.JPG',
+                      width: 55, height: 55),
+                  title: const Text(
+                    'Mobilidade Internacional Servidor / Estudante',
+                    style: TextStyle(
+                      color: Colors.blue,
+                    ),
+                  ),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const MobilidadeInternacional(
+                          title:
+                              'Mobilidade Internacional Servidor / Estudante',
+                        ),
+                      ),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: Image.asset('assets/images/mundo.JPG',
+                      width: 55, height: 55),
+                  title: const Text(
+                    'Cadastro dos Pontos Turísticos',
+                    style: TextStyle(
+                      color: Colors.blue,
+                    ),
+                  ),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const CadastroPontosTuristicos(
+                          title: 'Cadastro dos Pontos Turísticos',
+                        ),
+                      ),
+                    );
+                  },
                 ),
               ],
             ),
           ),
         ),
       ),
-
-      // Código referente à tela principal
-
-      //Estrutura do slong da tela
       body: Center(
-      child: ListView(
-        children: <Widget>[
-          Container(
-          color: Colors.blue, // Define a cor de fundo como azul
-          padding: const EdgeInsets.symmetric(vertical: 10), // Adiciona um espaçamento interno
-          child: Column(
-            children: <Widget>[
-              Container(
-                margin: const EdgeInsets.only(top: 20), // Adiciona espaço acima da imagem
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(40),
-                  child: Image.asset(
-                    'images/livro.jpg',
-                    width: 70,
-                    height: 70,
-                  ),
+        child: ListView(
+          children: <Widget>[
+            Container(
+              margin: const EdgeInsets.only(
+                top: 20,
+              ),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(40),
+                child: Image.asset(
+                  'assets/images/livro.JPG',
+                  width: 55,
+                  height: 55,
                 ),
               ),
-              const SizedBox(height: 10),
-              const Text(
-                'MobIFAPP',
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold, //Deixa o texto em negrito
-                  color: Colors.white, // Adiciona a cor branca ao texto
-                ),
-                textAlign: TextAlign.center, // deixando o texto centralizado
+            ),
+            const SizedBox(height: 5),
+            const Text(
+              'MobIFAPP',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
               ),
-              
-              const SizedBox(height: 15), // Espaço em branco antes da linha horizontal
-              const Divider(
-                height: 10,
-                color: Colors.white, // Ajuste da  cor e criação de uma linha orizontal 
-                thickness: 4, // Ajuste a espessura da linha 
-                indent: 12, // Espaçamento à esquerda
-                endIndent: 10, // Espaçamento à direita
-              ),
-            ],
-          ),
-        ),
-
-           //Estrutura da tela principal 
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 10),
+            const Divider(
+              height: 2,
+              color: Colors.black,
+              thickness: 4,
+              indent: 10,
+              endIndent: 10,
+            ),
+            const SizedBox(height: 20),
             ListTile(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Home(
+                      title: 'HOME',
+                    ),
+                  ),
+                );
+              },
               title: Row(
                 children: [
-                  Image.asset('images/home.jpg', width: 30, height: 30),
+                  Image.asset('assets/images/home.JPG', width: 55, height: 55),
                   const SizedBox(width: 20),
                   const Text(
                     'Home',
                     style: TextStyle(
                       color: Colors.blue,
-                      decoration: TextDecoration.underline,
                     ),
                   ),
                 ],
               ),
             ),
-            const SizedBox(height: 20), // Espaço de 20 pixels entre os títulos
-
+            const SizedBox(height: 20),
             ListTile(
               onTap: () {
-                // Ações que devem ser feitas quando o item é tocado
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const InstituicaoConveniada(
+                      title: 'Instituições Conveniadas',
+                    ),
+                  ),
+                );
               },
               title: Row(
                 children: [
-                  Image.asset('images/universidade.jpg', width: 30, height: 30),
+                  Image.asset('assets/images/universidade.JPG',
+                      width: 55, height: 55),
                   const SizedBox(width: 20),
                   const Text(
-                    'Universidades Participantes',
+                    'Instituições Conveniadas',
                     style: TextStyle(
                       color: Colors.blue,
-                      decoration: TextDecoration.underline,
                     ),
                   ),
                 ],
               ),
             ),
-            const SizedBox(height: 20), // Espaço de 20 pixels entre os títulos
-
+            const SizedBox(height: 20),
             ListTile(
               onTap: () {
-                // Realiza a ação de navegar para  a nova página quando o item for tocado
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                       builder: (context) => const UniversidadesParticipantes(title: 'Universidades Participantes',),
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const AcompanhamentoInscricao(
+                      title: 'Acompanhamento de Inscrição',
                     ),
-                  );
+                  ),
+                );
               },
               title: Row(
                 children: [
-                  Image.asset('images/aluno.jpg', width: 30, height: 30),
+                  Image.asset('assets/images/aluno.JPG',
+                      width: 55, height: 55),
                   const SizedBox(width: 20),
                   const Text(
                     'Acompanhamento de Inscrição',
                     style: TextStyle(
                       color: Colors.blue,
-                      decoration: TextDecoration.underline,
                     ),
                   ),
                 ],
               ),
             ),
-            const SizedBox(height: 20), // Espaço de 20 pixels entre os títulos
-
+            const SizedBox(height: 20),
             ListTile(
               onTap: () {
-                // Realiza a ação de ir para outra página quando o item é tocado
-                 Navigator.push(
+                Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) =>  const AcompanhamentoInscricao(title: 'Acompanhamento de Inscrição')),
+                  MaterialPageRoute(
+                    builder: (context) => const GuiaApoio(
+                      title: 'Guia de Apoio',
+                    ),
+                  ),
                 );
               },
               title: Row(
                 children: [
-                  Image.asset('images/mundo.jpg', width: 30, height: 30),
-                  const SizedBox(width: 25),
+                  Image.asset('assets/images/aluno.JPG', width: 55, height: 55),
+                  const SizedBox(width: 20),
                   const Text(
-                    'Participantes Itinerantes',
+                    'Guia de Apoio',
                     style: TextStyle(
                       color: Colors.blue,
-                      decoration: TextDecoration.underline,
                     ),
                   ),
                 ],
               ),
             ),
-            const SizedBox(height: 20), // Espaço de 20 pixels entre os títulos
-
+            const SizedBox(height: 20),
             ListTile(
               onTap: () {
-                // Realiza a ação de navegar para  a nova página quando o item for tocado
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                       builder: (context) => const ParticipantesItinerantes(title: 'Cadastro das Universidades',),
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const MobilidadeInternacional(
+                      title: 'Participante em Mobilidade Internacional',
                     ),
-                  );
+                  ),
+                );
               },
-
               title: Row(
                 children: [
-                  Image.asset('images/mundo.jpg', width: 30, height: 30),
+                  Image.asset('assets/images/mapa.JPG', width: 55, height: 55),
+                  const SizedBox(width: 20),
+                  const Text(
+                    'Participante Mobilidade Internacional',
+                    style: TextStyle(
+                      color: Colors.blue,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 20),
+            ListTile(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const PontosTuristicos(
+                      title: 'Pontos Turísticos',
+                    ),
+                  ),
+                );
+              },
+              title: Row(
+                children: [
+                  Image.asset('assets/images/mundo.JPG', width: 55, height: 55),
                   const SizedBox(width: 20),
                   const Text(
                     'Pontos Turísticos',
                     style: TextStyle(
                       color: Colors.blue,
-                      decoration: TextDecoration.underline,
                     ),
                   ),
                 ],
               ),
             ),
-            const SizedBox(height: 20), // Espaço de 20 pixels entre os títulos
-
-            ListTile(
-              onTap: () {
-                // Realiza a ação de navegar para  a nova página quando o item for tocado
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                       builder: (context) => const PontosTuristicos(title: 'Pontos Turistícos',),
-                    ),
-                  );    
-              }
-            )
           ],
         ),
       ),
