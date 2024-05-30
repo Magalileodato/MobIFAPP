@@ -11,6 +11,7 @@ import 'ponto_turistico.dart';
 import 'universidades_participantes.dart';
 import 'guia_apoio.dart';
 import 'servidor_temporario.dart';
+import 'aluno_temporario.dart';
 
 void main() {
   runApp(const MyApp());
@@ -83,9 +84,7 @@ class MyHomePage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const Home(
-                          title: 'Home',
-                        ),
+                        builder: (context) => const Home(title: 'Home'),
                       ),
                     );
                   },
@@ -137,7 +136,7 @@ class MyHomePage extends StatelessWidget {
                   leading: Image.asset('assets/images/aluno.JPG',
                       width: 55, height: 55),
                   title: const Text(
-                    'Cadastro Para Servidor Temporário - Edital & Inscrições',
+                    'Sou Professor Estrangeiro quero realizar uma mobilidade no IFRJ',
                     style: TextStyle(
                       color: Colors.blue,
                     ),
@@ -147,7 +146,29 @@ class MyHomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => const ServidorTemporario(
-                          title: 'Sou Professor Estrangeiro quero realizar uma mobilidade no IFRJ',
+                          title:
+                              'Sou Professor Estrangeiro quero realizar uma mobilidade no IFRJ',
+                        ),
+                      ),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: Image.asset('assets/images/aluno.JPG',
+                      width: 55, height: 55),
+                  title: const Text(
+                    'Sou Aluno Estrangeiro quero realizar uma mobilidade no IFRJ',
+                    style: TextStyle(
+                      color: Colors.blue,
+                    ),
+                  ),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const AlunoTemporario(
+                          title:
+                              'Sou Aluno Estrangeiro quero realizar uma mobilidade no IFRJ',
                         ),
                       ),
                     );
@@ -203,9 +224,7 @@ class MyHomePage extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             Container(
-              margin: const EdgeInsets.only(
-                top: 20,
-              ),
+              margin: const EdgeInsets.only(top: 20),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(40),
                 child: Image.asset(
@@ -239,9 +258,7 @@ class MyHomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const Home(
-                      title: 'HOME',
-                    ),
+                    builder: (context) => const Home(title: 'HOME'),
                   ),
                 );
               },
@@ -264,7 +281,7 @@ class MyHomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const ParticipantesItinerantes(
+                    builder: (context) => const InstituicaoConveniada(
                       title: 'Instituições Conveniadas',
                     ),
                   ),
