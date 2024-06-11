@@ -551,6 +551,7 @@ class RegiaoDosLagosTab extends StatelessWidget {
   }
 }
 
+
 class RegiaoSulFluminenseTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -568,7 +569,7 @@ class RegiaoSulFluminenseTab extends StatelessWidget {
                   decoration: TextDecoration.underline,
                 ),
               ),
-              Image.asset('images/centrohistorico.jpg',
+              Image.asset('assets/images/centrohistorico.jpg',
                   width: 400, height: 400),
               Text(
                 'Preserva a arquitetura colonial portuguesa.',
@@ -593,7 +594,7 @@ class RegiaoSulFluminenseTab extends StatelessWidget {
                   decoration: TextDecoration.underline,
                 ),
               ),
-              Image.asset('images/cachadarco.jpg',
+              Image.asset('assets/images/cachadarco.jpg',
                   width: 400, height: 400),
               Text(
                 'Uma das praias mais bonitas da região.',
@@ -618,7 +619,7 @@ class RegiaoSulFluminenseTab extends StatelessWidget {
                   decoration: TextDecoration.underline,
                 ),
               ),
-              Image.asset('images/praiadosonoparaty.jpg',
+              Image.asset('assets/images/praiadosonoparaty.jpg',
                   width: 400, height: 400),
               Text(
                 'Localizada em Paraty, a Praia do Sono é conhecida por sua beleza natural intocada e atmosfera tranquila. É acessível apenas por trilha ou barco, o que a torna um destino popular para os amantes da natureza em busca de uma experiência mais isolada.',
@@ -631,7 +632,250 @@ class RegiaoSulFluminenseTab extends StatelessWidget {
             ],
           ),
         ),
-        // Adicione mais itens à lista, se necessário
+        ListTile(
+          title: Column(
+            children: [
+              Text(
+                'Niteroi - MAC',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 20,
+                  color: const Color.fromARGB(255, 18, 19, 19),
+                  decoration: TextDecoration.underline,
+                ),
+              ),
+              Image.asset('assets/images/mac.png', width: 400, height: 400),
+              Text(
+                'Localizada em Niteroi, Projetado por Oscar Niemeyer, o MAC é um dos cartões postais de Niterói e oferece uma vista panorâmica da Baía de Guanabara.',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.blue,
+                ),
+              ),
+            ],
+          ),
+        ),
+        ListTile(
+          title: Column(
+            children: [
+              Text(
+                'Niteroi - Parque da Cidade ',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 20,
+                  color: const Color.fromARGB(255, 18, 19, 19),
+                  decoration: TextDecoration.underline,
+                ),
+              ),
+              Image.asset('assets/images/parquecidade.jpg',
+                  width: 400, height: 400),
+              Text(
+                'Localizado no Morro da Viração, o parque oferece trilhas e mirantes com vistas espetaculares do Rio de Janeiro, da Baía de Guanabara e de Niterói.',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.blue,
+                ),
+              ),
+            ],
+          ),
+        ),
+        ListTile(
+          title: Column(
+            children: [
+              Text(
+                'Niteroi - Praia de Itacoatiara ',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 20,
+                  color: const Color.fromARGB(255, 18, 19, 19),
+                  decoration: TextDecoration.underline,
+                ),
+              ),
+              Image.asset('assets/images/Itacoatiara.JPG',
+                  width: 400, height: 400),
+              Text(
+                'Famosa entre os surfistas, a praia oferece águas claras e uma bela paisagem, além de trilhas para o Costão de Itacoatiara.',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.blue,
+                ),
+              ),
+            ],
+          ),
+        ),
+        ListTile(
+          title: Column(
+            children: [
+              Text(
+                'Niteroi - Fortaleza de Santa Cruz ',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 20,
+                  color: const Color.fromARGB(255, 18, 19, 19),
+                  decoration: TextDecoration.underline,
+                ),
+              ),
+              Image.asset('assets/images/fortaleza.JPG',
+                  width: 400, height: 400),
+              Text(
+                'Construída no século XVI, a fortaleza oferece visitas guiadas e uma vista privilegiada da entrada da Baía de Guanabara.',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.blue,
+                ),
+              ),
+            ],
+          ),
+        ),
+        ListTile(
+          title: Column(
+            children: [
+              Text(
+                'Niteroi - Campo São Bento ',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 20,
+                  color: const Color.fromARGB(255, 18, 19, 19),
+                  decoration: TextDecoration.underline,
+                ),
+              ),
+              Image.asset('assets/images/Campo.JPG', width: 400, height: 400),
+              Text(
+                'Um parque urbano com lagos, áreas de lazer, quiosques e feiras de artesanato, ideal para um passeio tranquilo em meio à natureza',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.blue,
+                ),
+              ),
+            ],
+          ),
+        ),
+        ListTile(
+          title: Column(
+            children: [
+              Text(
+                'Angra dos Reis - Ilha Grande ',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 20,
+                  color: const Color.fromARGB(255, 18, 19, 19),
+                  decoration: TextDecoration.underline,
+                ),
+              ),
+              Image.asset('assets/images/ilha.JPG', width: 400, height: 400),
+              Text(
+                'Um dos principais destinos turísticos de Angra dos Reis, com praias paradisíacas, trilhas e opções de mergulho. A Praia de Lopes Mendes e a Vila do Abraão são destaques.',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.blue,
+                ),
+              ),
+            ],
+          ),
+        ),
+        ListTile(
+          title: Column(
+            children: [
+              Text(
+                'Angra dos Reis - Praia do Dentista (Ilha da Gipoia) ',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 20,
+                  color: const Color.fromARGB(255, 18, 19, 19),
+                  decoration: TextDecoration.underline,
+                ),
+              ),
+              Image.asset('assets/images/Giopoia.JPG', width: 400, height: 400),
+              Text(
+                'Conhecida por suas águas cristalinas e areia branca, é um dos destinos mais procurados por quem visita Angra dos Reis.',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.blue,
+                ),
+              ),
+            ],
+          ),
+        ),
+        ListTile(
+          title: Column(
+            children: [
+              Text(
+                'Angra dos Reis - Ilha de Cataguases ',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 20,
+                  color: const Color.fromARGB(255, 18, 19, 19),
+                  decoration: TextDecoration.underline,
+                ),
+              ),
+              Image.asset('assets/images/cataguases.JPG',
+                  width: 400, height: 400),
+              Text(
+                'Pequena ilha com praias de areia branca e águas transparentes, ideal para um dia de relaxamento e mergulho.',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.blue,
+                ),
+              ),
+            ],
+          ),
+        ),
+        ListTile(
+          title: Column(
+            children: [
+              Text(
+                'Angra dos Reis - Matriz de Nossa Senhora da Conceição ',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 20,
+                  color: const Color.fromARGB(255, 18, 19, 19),
+                  decoration: TextDecoration.underline,
+                ),
+              ),
+              Image.asset('assets/images/matriz.JPG', width: 400, height: 400),
+              Text(
+                'A igreja mais antiga de Angra dos Reis, construída em 1750, oferece um passeio cultural pelo centro histórico da cidade.',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.blue,
+                ),
+              ),
+            ],
+          ),
+        ),
+        ListTile(
+          title: Column(
+            children: [
+              Text(
+                'Angra dos Reis - Marina do Bracuhy',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 20,
+                  color: const Color.fromARGB(255, 18, 19, 19),
+                  decoration: TextDecoration.underline,
+                ),
+              ),
+              Image.asset('assets/images/marina.JPG', width: 400, height: 400),
+              Text(
+                'Um dos melhores pontos de Angra dos Reis para quem gosta de atividades náuticas, oferecendo infraestrutura completa para barcos e iate',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.blue,
+                ),
+              ),
+            ],
+          ),
+        ),
       ],
     );
   }
