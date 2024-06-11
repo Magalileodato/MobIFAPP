@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
-class AlunoTemporario extends StatelessWidget {
+
+class ServidorTemporario extends StatelessWidget {
   final String title;
 
-  const AlunoTemporario({Key? key, required this.title}) : super(key: key);
+  const ServidorTemporario({Key? key, required this.title}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +21,7 @@ class AlunoTemporario extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(40),
                 child: Image.asset(
-                  'assets/images/aluno.JPG',
+                  'assets/images/alunos.JPG',
                   width: 50, // Tamanho da imagem
                   height: 50,
                 ),
@@ -45,21 +46,21 @@ class AlunoTemporario extends StatelessWidget {
               endIndent: 10,
             ),
             // Informações das instituições conveniadas
-            _buildAlunoTemporario(context: context),
+            _buildServidorTemporario(context: context),
           ],
         ),
       ),
     );
   }
 
-  Widget _buildAlunoTemporario({required BuildContext context}) {
+  Widget _buildServidorTemporario({required BuildContext context}) {
     return Padding(
       padding: const EdgeInsets.all(10.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: const <Widget>[
           Text(
-            'Manual do Aluno – Contratação de Professor Visitante/Visitante Estrangeiro – PSS já realizado',
+            'Manual do Servidor – Contratação de Professor Visitante/Visitante Estrangeiro – PSS já realizado',
             style: TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.bold,
